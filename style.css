@@ -5,17 +5,84 @@
     box-sizing: border-box;
 }
 
-ul li{
+ul li {
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-button{
+button {
     border: 0;
     outline: 0;
     background: 0;
     cursor: pointer;
+}
+
+/* general*/
+body {
+    font-weight: 400;
+    font-family: 'Catamaran', sans-serif;
+}
+
+/* header */
+.header .container {
+    width: 1535px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.header .container .left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 110px;
+}
+
+header .container .left .menu {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 30px;
+}
+
+.header .container .left .menu li {
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'CAtamaran', sans-serif;
+    color: #163561;
+    padding: 8px 14px;
+}
+
+.header .container .left .menu li.active {
+    color: #ffff;
+    background: #a3c1ef;
+    padding: 67px 14px 8px;
+    border-radius: 0 0 5px 5px;
+}
+
+.header .container .right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 72px;
+}
+
+.header  .container .right .btn{
+    color: #ffff;
+    background: #99baed;
+    padding:23px 33px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Catamaran',sans-serif;
+    line-height: 30px;
+    letter-spacing: 0.6px;
+    box-shadow: 10px   10px  15px #99BAED;
+
+
 }
